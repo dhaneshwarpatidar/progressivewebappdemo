@@ -1,2 +1,2 @@
-# Best Progressive Web App / React, Webpack
+# Best Progressive Web App
 Comming Soon
