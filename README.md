@@ -43,3 +43,10 @@ From the project’s root directory Install
 ``
 $ npm install --save-dev webpack webpack-dev-server
 ``
+```
+bpwa
+└───public
+│   │___index.html
+└───node_modules
+└───package.json
+  ```
