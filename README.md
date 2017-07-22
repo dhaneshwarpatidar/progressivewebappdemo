@@ -1,4 +1,4 @@
-# Best Progressive Web App
+# Progressive Web App Demo
 ### What's this project?
 This is a demo of Progressive Web App with features like Home Screen, Splash Screen, Lite app.
 
@@ -195,3 +195,111 @@ $ npm i --save react-tap-event-plugin
 ```
 
 Craete a app.js file
+
+
+./src/app.js
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBarDemo from './include/appbar';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
+const Layout = () => (
+  <MuiThemeProvider>
+    <AppBarDemo />
+  </MuiThemeProvider>
+);
+ export default Layout;
+ ```
+ Then create appbar file in  include folder 
+ 
+ ./src/include/appbar.js
+ 
+ ```
+ import React from 'react';
+import AppBar from 'material-ui/AppBar';
+const AppBarDemo = () => (
+  <AppBar
+    title="BPWA"
+    iconClassNameRight="muidocs-icon-navigation-expand-more"
+  />
+);
+export default AppBarDemo;
+```
+
+Now Update Index.js file
+
+./src/index.js
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Layout from './app';
+ 
+ReactDOM.render(<Layout />, document.getElementById('app'));
+```
+Run app
+
+```
+$ npm start 
+```
+http://localhost:8080/
+
+## 6. Add manifest.js 
+(For Add Home Screen Icon)
+
+./public/manifest.json
+
+```
+{
+  "name": "Best Progressive Web App",
+  "short_name": "BPWA",
+  "description": "Progressive Web App Demo",  
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [     
+    {
+        "src": "http://i.imgur.com/KR3KJ3f.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    } ,
+    {
+     "src": "http://i.imgur.com/KR3KJ3f.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+Now edit the ./public/index.html  file
+
+./public/index.html
+
+```
+------
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Tell the browser it's a PWA -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Tell iOS it's a PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Make sure theme-color is defined -->
+    <meta name="theme-color" content="#FFFFFF">
+    <title> Best Progressive Web App Demo With React </title>
+  </head>
+--------
+```
+Now You can Add home screen Icon
+
+```
+$npm start 
+```
