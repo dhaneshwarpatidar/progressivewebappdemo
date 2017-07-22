@@ -1,9 +1,12 @@
 # Progressive Web App Demo
+
+![BPWA](http://i.imgur.com/KR3KJ3f.png)
+
 ### What's this project?
 This is a demo of Progressive Web App with features like Home Screen, Splash Screen, Lite app.
 
 ### Development
-This project I have included:  reactjs, Webpack, Babel, react-router and material-ui.
+This project I have included:  [reactjs](https://facebook.github.io/react/), [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), react-router and [material-ui](http://www.material-ui.com/#/get-started/required-knowledge).
 
 ## 1. Setting up the Project Folder
 ```javascript
@@ -36,7 +39,7 @@ Create HTML file ( ./public/index.html )
 
 ## 2. Setting up Webpack
 
-let's setup webpack and webpack-dev-server
+let's setup webpack and [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html).
 
 From the project’s root directory Install 
 
@@ -303,3 +306,43 @@ Now You can Add home screen Icon
 ```
 $npm start 
 ```
+
+## TODO:
+
+Some things that are not currently covered in the repo But We Try Update Soon.
+
+* Push notification
+* Cache then network 
+* Background Sync support
+* Fetch API
+* Service Worker.
+
+### [List of BEST Progressive Web Apps](https://www.quora.com/profile/Dhaneshwar-Patidar-2)
+
+[1.Flipkart Lite](https://www.flipkart.com/)
+
+[2. Olacabes](https://www.olacabs.com/)
+
+[3. Snapdeal](https://www.snapdeal.com/)
+
+[4. Makemytrip](https://www.makemytrip.com/)
+
+[5. Aliexpress](https://www.aliexpress.com/)
+
+[6. Alibaba](https://www.alibaba.com/)
+
+[7. Trivago](https://www.trivago.in/?from=A2HS)
+
+[8. Jumia](https://travel.jumia.com/)
+
+[9. redmart](https://m.redmart.com/)
+
+[10. goibibo](https://www.goibibo.com/)
+
+
+
+
+
+
+
+
